@@ -253,10 +253,15 @@ div .Imagen6{
   -webkit-filter:blur(10px);
 }
 
-#Img2 img, #Img4 img, #Img6 img {
+ .ImgFlex div:nth-child(even){
+   filter:grayscale(100%);
+   -webkit-filter:grayscale(100%);
+ }
+
+/*#Img2 img, #Img4 img, #Img6 img {
   filter:grayscale(100%);
   -webkit-filter:grayscale(100%);
-}
+}*/
 
 #Img3 img{
   filter:sepia(90%);
