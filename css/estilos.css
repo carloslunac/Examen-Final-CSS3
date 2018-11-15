@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+
+@media screen and (max-width: 899px) {
+  body{
+    background-color: #02010a;
+  }
+  .contenido{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header{
+    background-color: #5b7989;
+    color: white;
+    padding: 1em;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+  header h1{
+    text-shadow: 0 0 2px #02010a;
+    color: white;
+  }
+  header a{
+    color: white;
+  }
+  nav{
+    font-size: 23px;
+  }
+  nav li{
+    display: inline-block;
+  }
+  nav li .active{
+    text-decoration: none;
+  }
+
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+section{
+  width:100%;
+}
+.active{
+   text-decoration: none;
+ }
+
+ div .ImagenesFlex{
+   display: flex;
+   flex-direction:column;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+
+  div .Imagen1{
+    padding: 20px 20px 20px 20px;
+   background-color: #82c3a6;
+   text-align: center;
+   box-shadow: 2px 2px black;
+ }
+
+ div .Imagen2,  div .Imagen3 {
+   padding: 20px 20px 20px 20px;
+   background-color: #d5c75f;
+   text-align: center;
+   flex: 1 2 45%;
+ }
+
+ div .Imagen2{
+   order: 1;
+   flex-grow: 1;
+}
+
+div .Imagen3{
+  order: 2;
+  flex-grow: 1;
+}
+
+ div img{
+   border: 1px solid Black;
+   box-shadow: 2px 2px black;
+   height: 90%;
+   width: 90%;
+ }
+
+ footer{
+   padding: 1em;
+   background-color: #c6d5c5;
+   border-radius: 0 0 10px 10px;
+   text-align: center;
+   text-decoration:none;
+ }
+  .PieDePagina{
+    height: 100%;
+   display: flex;
+   flex-direction:column;
+ }
+ div [class*="caja"]{
+   border: 1px solid #c6d5c5;
+   height: 100%;
+   padding-bottom: 20px;
+   padding-left: 30px;
+ }
+ div [class*="caja"] li {
+   list-style:none;
+   text-align:left;
+ }
+  [class*="icono"] {
+   width:15px;
+ }
+
+
+
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+---------------------PROGRAMACION PARA DESKTOP--------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+@media screen and (min-width: 900px) {
+  body{
+    background-color: #02010a;
+  }
+  .contenido{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header{
+    height: 40px;
+    background-color: #5b7989;
+    color: white;
+    padding: 1em;
+    border-radius: 10px 10px 0 0;
+  }
+  header h1{
+    text-shadow: 0 0 2px #02010a;
+    color: white;
+    float: left;
+  }
+  header a{
+    color: white;
+  }
+  nav{
+    font-size: 23px;
+    float: right;
+  }
+  nav li{
+    display: inline-block;
+  }
+
+ .active{
+    text-decoration: none;
+  }
+
+  div .ImagenesFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+   div .Imagen1{
+     padding: 20px 20px 20px 20px;
+    background-color: #82c3a6;
+    text-align: center;
+    box-shadow: 2px 2px black;
+  }
+
+  div .Imagen2,  div .Imagen3 {
+    padding: 20px 20px 20px 20px;
+    background-color: #d5c75f;
+    text-align: center;
+    flex: 1 2 45%;
+  }
+
+  div .Imagen2{
+    order: 1;
+    flex-grow: 1;
+ }
+
+ div .Imagen3{
+   order: 2;
+   flex-grow: 1;
+}
+
+  div img{
+    border: 1px solid Black;
+    box-shadow: 2px 2px black;
+    width: 90%;
+    height: 90%;
+  }
+
+  footer{
+    padding: 1em;
+    background-color: #c6d5c5;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    text-decoration:none;
+  }
+   .PieDePagina{
+     width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  div [class*="caja"]{
+    border: 1px solid #c6d5c5;
+    width: 25%;
+
+  }
+  div [class*="caja"] li {
+    list-style:none;
+    text-align:left;
+  }
+   [class*="icono"] {
+    width:15px;
+  }
+
+}
+#Img2 img:hover{
+transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
+border: 2px solid #c6d5c5;
+box-shadow: 2px 2px #c6d5c5;
+}
+#Img3 img:hover{
+transform:translate(5px,-20px);
+-webkit-transform:translate(5px,-20px);
+border: 2px solid #c6d5c5;
+box-shadow: 2px 2px #c6d5c5;
+}
+
+@keyframes header-animacion {
+	0% {
+		margin-top: 150%
+	}
+	60% {
+	margin-top: -5%
+	}
+	100% {
+	margin-top: -0%
+	}
+}
+header{
+	animation-name: header-animacion;
+	animation-duration: 2s;
+	/*-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;*/
+}
